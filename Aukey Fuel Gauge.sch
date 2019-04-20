@@ -1,0 +1,450 @@
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:Aukey Parts
+LIBS:Aukey Fuel Gauge-cache
+EELAYER 25 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LM3914 U1
+U 1 1 583BEC7A
+P 5000 3450
+F 0 "U1" H 5250 2700 60  0000 C CNN
+F 1 "LM3914" H 5100 4050 60  0000 C CNN
+F 2 "PLCC20:PLCC20" H 5000 3450 60  0001 C CNN
+F 3 "" H 5000 3450 60  0001 C CNN
+	1    5000 3450
+	1    0    0    -1  
+$EndComp
+Text Notes 3900 4950 0    60   ~ 0
+4.2V (8.4v)max per cell\n3.0V (6.0v)min per cell\n\n(2 cells in series) x4\n\n
+$Comp
+L R R4
+U 1 1 583BED8E
+P 4125 3300
+F 0 "R4" V 4205 3300 50  0000 C CNN
+F 1 "13K" V 4125 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 4055 3300 50  0001 C CNN
+F 3 "" H 4125 3300 50  0000 C CNN
+	1    4125 3300
+	0    1    1    0   
+$EndComp
+$Comp
+L R R3
+U 1 1 583BEDE3
+P 3600 3700
+F 0 "R3" V 3680 3700 50  0000 C CNN
+F 1 "10K" V 3600 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3530 3700 50  0001 C CNN
+F 3 "" H 3600 3700 50  0000 C CNN
+	1    3600 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R1
+U 1 1 583BEE5F
+P 3425 3300
+F 0 "R1" V 3505 3300 50  0000 C CNN
+F 1 "10K" V 3425 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3355 3300 50  0001 C CNN
+F 3 "" H 3425 3300 50  0000 C CNN
+	1    3425 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L R R2
+U 1 1 583BEE92
+P 3425 3700
+F 0 "R2" V 3505 3700 50  0000 C CNN
+F 1 "10K" V 3425 3700 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3355 3700 50  0001 C CNN
+F 3 "" H 3425 3700 50  0000 C CNN
+	1    3425 3700
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3300 4275 3300
+Wire Wire Line
+	3750 3300 3975 3300
+Wire Wire Line
+	3925 3200 4550 3200
+Wire Wire Line
+	3425 3500 4550 3500
+Wire Wire Line
+	3425 3450 3425 3550
+Connection ~ 3425 3500
+$Comp
+L +BATT #PWR01
+U 1 1 583BF31F
+P 2825 2775
+F 0 "#PWR01" H 2825 2625 50  0001 C CNN
+F 1 "+BATT" H 2825 2915 50  0000 C CNN
+F 2 "" H 2825 2775 50  0000 C CNN
+F 3 "" H 2825 2775 50  0000 C CNN
+	1    2825 2775
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3425 2775 3425 3150
+$Comp
+L C_Small C1
+U 1 1 583BF4B2
+P 4150 2850
+F 0 "C1" H 4160 2920 50  0000 L CNN
+F 1 "1U" H 4025 2925 50  0000 L CNN
+F 2 "w_smd_cap:c_0603" H 4150 2850 50  0001 C CNN
+F 3 "" H 4150 2850 50  0000 C CNN
+	1    4150 2850
+	-1   0    0    1   
+$EndComp
+$Comp
+L GND #PWR02
+U 1 1 583BF6CE
+P 4325 2975
+F 0 "#PWR02" H 4325 2725 50  0001 C CNN
+F 1 "GND" H 4325 2825 50  0000 C CNN
+F 2 "" H 4325 2975 50  0000 C CNN
+F 3 "" H 4325 2975 50  0000 C CNN
+	1    4325 2975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4550 3050 4450 3050
+Wire Wire Line
+	4450 3050 4450 2975
+Wire Wire Line
+	4450 2975 4150 2975
+Connection ~ 4325 2975
+Wire Wire Line
+	4150 2975 4150 2950
+Wire Wire Line
+	4000 2750 4550 2750
+Wire Wire Line
+	4550 2750 4550 2950
+Wire Wire Line
+	4000 2750 4000 2975
+Wire Wire Line
+	4000 2975 3425 2975
+Connection ~ 3425 2975
+Connection ~ 4150 2750
+Wire Wire Line
+	3600 3875 3425 3875
+Wire Wire Line
+	3425 3850 3425 3950
+$Comp
+L GND #PWR03
+U 1 1 583BF8E1
+P 3425 3950
+F 0 "#PWR03" H 3425 3700 50  0001 C CNN
+F 1 "GND" H 3425 3800 50  0000 C CNN
+F 2 "" H 3425 3950 50  0000 C CNN
+F 3 "" H 3425 3950 50  0000 C CNN
+	1    3425 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 3425 3875
+Wire Wire Line
+	3850 3600 4550 3600
+Wire Wire Line
+	4350 3300 4350 3700
+Wire Wire Line
+	4350 3700 4550 3700
+Connection ~ 4350 3300
+$Comp
+L Led_Small D1
+U 1 1 583BFB5B
+P 5700 2950
+F 0 "D1" H 5750 3000 50  0000 L CNN
+F 1 "10%" H 5925 3000 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 5700 2950 50  0001 C CNN
+F 3 "" V 5700 2950 50  0000 C CNN
+	1    5700 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D2
+U 1 1 583BFDD7
+P 5700 3050
+F 0 "D2" H 5750 3100 50  0000 L CNN
+F 1 "20%" H 5925 3100 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 5700 3050 50  0001 C CNN
+F 3 "" V 5700 3050 50  0000 C CNN
+	1    5700 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D3
+U 1 1 583BFE0F
+P 5700 3150
+F 0 "D3" H 5750 3200 50  0000 L CNN
+F 1 "30%" H 5925 3200 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 5700 3150 50  0001 C CNN
+F 3 "" V 5700 3150 50  0000 C CNN
+	1    5700 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D4
+U 1 1 583BFE3E
+P 5700 3250
+F 0 "D4" H 5750 3300 50  0000 L CNN
+F 1 "40%" H 5925 3300 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 5700 3250 50  0001 C CNN
+F 3 "" V 5700 3250 50  0000 C CNN
+	1    5700 3250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D5
+U 1 1 583BFEC8
+P 5700 3350
+F 0 "D5" H 5750 3400 50  0000 L CNN
+F 1 "50%" H 5925 3400 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 5700 3350 50  0001 C CNN
+F 3 "" V 5700 3350 50  0000 C CNN
+	1    5700 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D6
+U 1 1 583BFF05
+P 5700 3450
+F 0 "D6" H 5750 3500 50  0000 L CNN
+F 1 "60%" H 5925 3500 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 5700 3450 50  0001 C CNN
+F 3 "" V 5700 3450 50  0000 C CNN
+	1    5700 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D7
+U 1 1 583BFF3D
+P 5700 3550
+F 0 "D7" H 5750 3600 50  0000 L CNN
+F 1 "70%" H 5925 3600 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 5700 3550 50  0001 C CNN
+F 3 "" V 5700 3550 50  0000 C CNN
+	1    5700 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D8
+U 1 1 583BFF80
+P 5700 3650
+F 0 "D8" H 5750 3700 50  0000 L CNN
+F 1 "80%" H 5925 3700 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 5700 3650 50  0001 C CNN
+F 3 "" V 5700 3650 50  0000 C CNN
+	1    5700 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D9
+U 1 1 583C002E
+P 5700 3750
+F 0 "D9" H 5750 3800 50  0000 L CNN
+F 1 "90%" H 5925 3800 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 5700 3750 50  0001 C CNN
+F 3 "" V 5700 3750 50  0000 C CNN
+	1    5700 3750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Led_Small D10
+U 1 1 583C006F
+P 5700 3850
+F 0 "D10" H 5750 3900 50  0000 L CNN
+F 1 "100%" H 5925 3900 50  0000 L CNN
+F 2 "LEDs:LED_0603" V 5700 3850 50  0001 C CNN
+F 3 "" V 5700 3850 50  0000 C CNN
+	1    5700 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5500 2950 5600 2950
+Wire Wire Line
+	5500 3050 5600 3050
+Wire Wire Line
+	5600 3150 5500 3150
+Wire Wire Line
+	5600 3250 5500 3250
+Wire Wire Line
+	5600 3350 5500 3350
+Wire Wire Line
+	5600 3450 5500 3450
+Wire Wire Line
+	5600 3550 5500 3550
+Wire Wire Line
+	5600 3650 5500 3650
+Wire Wire Line
+	5500 3750 5600 3750
+Wire Wire Line
+	5600 3850 5500 3850
+Wire Wire Line
+	5800 3850 5875 3850
+Wire Wire Line
+	5875 3850 5875 2700
+Wire Wire Line
+	5875 2700 3950 2700
+Wire Wire Line
+	3950 2700 3950 2825
+Wire Wire Line
+	3950 2825 3425 2825
+Connection ~ 3425 2825
+Wire Wire Line
+	5800 2950 5875 2950
+Connection ~ 5875 2950
+Wire Wire Line
+	5800 3050 5875 3050
+Connection ~ 5875 3050
+Wire Wire Line
+	5800 3150 5875 3150
+Connection ~ 5875 3150
+Wire Wire Line
+	5800 3250 5875 3250
+Connection ~ 5875 3250
+Wire Wire Line
+	5800 3350 5875 3350
+Connection ~ 5875 3350
+Wire Wire Line
+	5800 3450 5875 3450
+Connection ~ 5875 3450
+Wire Wire Line
+	5800 3550 5875 3550
+Connection ~ 5875 3550
+Wire Wire Line
+	5800 3650 5875 3650
+Connection ~ 5875 3650
+Wire Wire Line
+	5800 3750 5875 3750
+Connection ~ 5875 3750
+Text Notes 4300 4075 0    60   ~ 0
+Open for\nDot Mode\n
+NoConn ~ 4550 3850
+$Comp
+L SW_PUSH SW1
+U 1 1 583C0FF7
+P 3125 2775
+F 0 "SW1" H 3275 2885 50  0000 C CNN
+F 1 "Batt Test" H 3125 2695 50  0000 C CNN
+F 2 "w_switch:smd_push" H 3125 2775 50  0001 C CNN
+F 3 "" H 3125 2775 50  0000 C CNN
+	1    3125 2775
+	1    0    0    -1  
+$EndComp
+Text Notes 6200 3675 1    60   ~ 0
+Capacity LEDs\n
+$Comp
+L CONN_01X02 P1
+U 1 1 583C3108
+P 2925 3575
+F 0 "P1" H 2925 3725 50  0000 C CNN
+F 1 "DC In" V 3025 3575 50  0000 C CNN
+F 2 "Connectors:CONN_2.54mm_1x2" H 2925 3575 50  0001 C CNN
+F 3 "" H 2925 3575 50  0000 C CNN
+	1    2925 3575
+	0    1    1    0   
+$EndComp
+$Comp
+L +BATT #PWR04
+U 1 1 583C321C
+P 2875 3375
+F 0 "#PWR04" H 2875 3225 50  0001 C CNN
+F 1 "+BATT" H 2875 3515 50  0000 C CNN
+F 2 "" H 2875 3375 50  0000 C CNN
+F 3 "" H 2875 3375 50  0000 C CNN
+	1    2875 3375
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR05
+U 1 1 583C325D
+P 3225 3400
+F 0 "#PWR05" H 3225 3150 50  0001 C CNN
+F 1 "GND" H 3225 3250 50  0000 C CNN
+F 2 "" H 3225 3400 50  0000 C CNN
+F 3 "" H 3225 3400 50  0000 C CNN
+	1    3225 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3225 3400 3225 3325
+Wire Wire Line
+	3225 3325 2975 3325
+Wire Wire Line
+	2975 3325 2975 3375
+Wire Notes Line
+	6300 2550 6300 4425
+Wire Notes Line
+	6300 2550 2675 2550
+Wire Notes Line
+	2675 2550 2675 4425
+Wire Notes Line
+	2675 4425 6300 4425
+$Comp
+L R R5
+U 1 1 5844032A
+P 3600 3300
+F 0 "R5" V 3680 3300 50  0000 C CNN
+F 1 "9" V 3600 3300 50  0000 C CNN
+F 2 "Resistors_SMD:R_0603" V 3530 3300 50  0001 C CNN
+F 3 "" H 3600 3300 50  0000 C CNN
+	1    3600 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3600 3875 3600 3850
+Wire Wire Line
+	3600 3550 3600 3450
+Wire Wire Line
+	3750 3100 3750 3300
+Wire Wire Line
+	3850 3600 3850 3300
+Connection ~ 3850 3300
+Wire Wire Line
+	3925 3200 3925 3300
+Connection ~ 3925 3300
+Wire Wire Line
+	3750 3100 3600 3100
+Wire Wire Line
+	3600 3100 3600 3150
+$EndSCHEMATC
