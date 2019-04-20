@@ -1,36 +1,6 @@
-EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
-LIBS:Aukey Parts
+EESchema Schematic File Version 4
 LIBS:Aukey Fuel Gauge-cache
-EELAYER 25 0
+EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -45,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L LM3914 U1
+L Aukey-Fuel-Gauge-rescue:LM3914 U1
 U 1 1 583BEC7A
 P 5000 3450
 F 0 "U1" H 5250 2700 60  0000 C CNN
@@ -58,7 +28,7 @@ $EndComp
 Text Notes 3900 4950 0    60   ~ 0
 4.2V (8.4v)max per cell\n3.0V (6.0v)min per cell\n\n(2 cells in series) x4\n\n
 $Comp
-L R R4
+L Aukey-Fuel-Gauge-rescue:R R4
 U 1 1 583BED8E
 P 4125 3300
 F 0 "R4" V 4205 3300 50  0000 C CNN
@@ -69,7 +39,7 @@ F 3 "" H 4125 3300 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L R R3
+L Aukey-Fuel-Gauge-rescue:R R3
 U 1 1 583BEDE3
 P 3600 3700
 F 0 "R3" V 3680 3700 50  0000 C CNN
@@ -80,7 +50,7 @@ F 3 "" H 3600 3700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R1
+L Aukey-Fuel-Gauge-rescue:R R1
 U 1 1 583BEE5F
 P 3425 3300
 F 0 "R1" V 3505 3300 50  0000 C CNN
@@ -91,7 +61,7 @@ F 3 "" H 3425 3300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L R R2
+L Aukey-Fuel-Gauge-rescue:R R2
 U 1 1 583BEE92
 P 3425 3700
 F 0 "R2" V 3505 3700 50  0000 C CNN
@@ -102,18 +72,18 @@ F 3 "" H 3425 3700 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4550 3300 4275 3300
+	4550 3300 4350 3300
 Wire Wire Line
-	3750 3300 3975 3300
+	3750 3300 3850 3300
 Wire Wire Line
 	3925 3200 4550 3200
 Wire Wire Line
 	3425 3500 4550 3500
 Wire Wire Line
-	3425 3450 3425 3550
+	3425 3450 3425 3500
 Connection ~ 3425 3500
 $Comp
-L +BATT #PWR01
+L Aukey-Fuel-Gauge-rescue:+BATT #PWR01
 U 1 1 583BF31F
 P 2825 2775
 F 0 "#PWR01" H 2825 2625 50  0001 C CNN
@@ -124,9 +94,9 @@ F 3 "" H 2825 2775 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3425 2775 3425 3150
+	3425 2775 3425 2825
 $Comp
-L C_Small C1
+L Aukey-Fuel-Gauge-rescue:C_Small C1
 U 1 1 583BF4B2
 P 4150 2850
 F 0 "C1" H 4160 2920 50  0000 L CNN
@@ -137,7 +107,7 @@ F 3 "" H 4150 2850 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L GND #PWR02
+L Aukey-Fuel-Gauge-rescue:GND #PWR02
 U 1 1 583BF6CE
 P 4325 2975
 F 0 "#PWR02" H 4325 2725 50  0001 C CNN
@@ -152,12 +122,12 @@ Wire Wire Line
 Wire Wire Line
 	4450 3050 4450 2975
 Wire Wire Line
-	4450 2975 4150 2975
+	4450 2975 4325 2975
 Connection ~ 4325 2975
 Wire Wire Line
 	4150 2975 4150 2950
 Wire Wire Line
-	4000 2750 4550 2750
+	4000 2750 4150 2750
 Wire Wire Line
 	4550 2750 4550 2950
 Wire Wire Line
@@ -169,9 +139,9 @@ Connection ~ 4150 2750
 Wire Wire Line
 	3600 3875 3425 3875
 Wire Wire Line
-	3425 3850 3425 3950
+	3425 3850 3425 3875
 $Comp
-L GND #PWR03
+L Aukey-Fuel-Gauge-rescue:GND #PWR03
 U 1 1 583BF8E1
 P 3425 3950
 F 0 "#PWR03" H 3425 3700 50  0001 C CNN
@@ -190,7 +160,7 @@ Wire Wire Line
 	4350 3700 4550 3700
 Connection ~ 4350 3300
 $Comp
-L Led_Small D1
+L Aukey-Fuel-Gauge-rescue:Led_Small D1
 U 1 1 583BFB5B
 P 5700 2950
 F 0 "D1" H 5750 3000 50  0000 L CNN
@@ -201,7 +171,7 @@ F 3 "" V 5700 2950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D2
+L Aukey-Fuel-Gauge-rescue:Led_Small D2
 U 1 1 583BFDD7
 P 5700 3050
 F 0 "D2" H 5750 3100 50  0000 L CNN
@@ -212,7 +182,7 @@ F 3 "" V 5700 3050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D3
+L Aukey-Fuel-Gauge-rescue:Led_Small D3
 U 1 1 583BFE0F
 P 5700 3150
 F 0 "D3" H 5750 3200 50  0000 L CNN
@@ -223,7 +193,7 @@ F 3 "" V 5700 3150 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D4
+L Aukey-Fuel-Gauge-rescue:Led_Small D4
 U 1 1 583BFE3E
 P 5700 3250
 F 0 "D4" H 5750 3300 50  0000 L CNN
@@ -234,7 +204,7 @@ F 3 "" V 5700 3250 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D5
+L Aukey-Fuel-Gauge-rescue:Led_Small D5
 U 1 1 583BFEC8
 P 5700 3350
 F 0 "D5" H 5750 3400 50  0000 L CNN
@@ -245,7 +215,7 @@ F 3 "" V 5700 3350 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D6
+L Aukey-Fuel-Gauge-rescue:Led_Small D6
 U 1 1 583BFF05
 P 5700 3450
 F 0 "D6" H 5750 3500 50  0000 L CNN
@@ -256,7 +226,7 @@ F 3 "" V 5700 3450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D7
+L Aukey-Fuel-Gauge-rescue:Led_Small D7
 U 1 1 583BFF3D
 P 5700 3550
 F 0 "D7" H 5750 3600 50  0000 L CNN
@@ -267,7 +237,7 @@ F 3 "" V 5700 3550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D8
+L Aukey-Fuel-Gauge-rescue:Led_Small D8
 U 1 1 583BFF80
 P 5700 3650
 F 0 "D8" H 5750 3700 50  0000 L CNN
@@ -278,7 +248,7 @@ F 3 "" V 5700 3650 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D9
+L Aukey-Fuel-Gauge-rescue:Led_Small D9
 U 1 1 583C002E
 P 5700 3750
 F 0 "D9" H 5750 3800 50  0000 L CNN
@@ -289,7 +259,7 @@ F 3 "" V 5700 3750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Led_Small D10
+L Aukey-Fuel-Gauge-rescue:Led_Small D10
 U 1 1 583C006F
 P 5700 3850
 F 0 "D10" H 5750 3900 50  0000 L CNN
@@ -322,7 +292,7 @@ Wire Wire Line
 Wire Wire Line
 	5800 3850 5875 3850
 Wire Wire Line
-	5875 3850 5875 2700
+	5875 3850 5875 3750
 Wire Wire Line
 	5875 2700 3950 2700
 Wire Wire Line
@@ -357,11 +327,10 @@ Connection ~ 5875 3650
 Wire Wire Line
 	5800 3750 5875 3750
 Connection ~ 5875 3750
-Text Notes 4300 4075 0    60   ~ 0
-Open for\nDot Mode\n
-NoConn ~ 4550 3850
+Text Notes 3875 4400 0    60   ~ 0
+Open for Dot Mode\nClose for Bar Mode\n
 $Comp
-L SW_PUSH SW1
+L Aukey-Fuel-Gauge-rescue:SW_PUSH SW1
 U 1 1 583C0FF7
 P 3125 2775
 F 0 "SW1" H 3275 2885 50  0000 C CNN
@@ -374,7 +343,7 @@ $EndComp
 Text Notes 6200 3675 1    60   ~ 0
 Capacity LEDs\n
 $Comp
-L CONN_01X02 P1
+L Aukey-Fuel-Gauge-rescue:CONN_01X02 P1
 U 1 1 583C3108
 P 2925 3575
 F 0 "P1" H 2925 3725 50  0000 C CNN
@@ -385,7 +354,7 @@ F 3 "" H 2925 3575 50  0000 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L +BATT #PWR04
+L Aukey-Fuel-Gauge-rescue:+BATT #PWR04
 U 1 1 583C321C
 P 2875 3375
 F 0 "#PWR04" H 2875 3225 50  0001 C CNN
@@ -396,7 +365,7 @@ F 3 "" H 2875 3375 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GND #PWR05
+L Aukey-Fuel-Gauge-rescue:GND #PWR05
 U 1 1 583C325D
 P 3225 3400
 F 0 "#PWR05" H 3225 3150 50  0001 C CNN
@@ -421,7 +390,7 @@ Wire Notes Line
 Wire Notes Line
 	2675 4425 6300 4425
 $Comp
-L R R5
+L Aukey-Fuel-Gauge-rescue:R R5
 U 1 1 5844032A
 P 3600 3300
 F 0 "R5" V 3680 3300 50  0000 C CNN
@@ -447,4 +416,66 @@ Wire Wire Line
 	3750 3100 3600 3100
 Wire Wire Line
 	3600 3100 3600 3150
+Wire Wire Line
+	3425 3500 3425 3550
+Wire Wire Line
+	4325 2975 4150 2975
+Wire Wire Line
+	3425 2975 3425 3150
+Wire Wire Line
+	4150 2750 4550 2750
+Wire Wire Line
+	3425 3875 3425 3950
+Wire Wire Line
+	4350 3300 4275 3300
+Wire Wire Line
+	3425 2825 3425 2975
+Wire Wire Line
+	5875 2950 5875 2700
+Wire Wire Line
+	5875 3050 5875 2950
+Wire Wire Line
+	5875 3150 5875 3050
+Wire Wire Line
+	5875 3250 5875 3150
+Wire Wire Line
+	5875 3350 5875 3250
+Wire Wire Line
+	5875 3450 5875 3350
+Wire Wire Line
+	5875 3550 5875 3450
+Wire Wire Line
+	5875 3650 5875 3550
+Wire Wire Line
+	5875 3750 5875 3650
+Wire Wire Line
+	3850 3300 3925 3300
+Wire Wire Line
+	3925 3300 3975 3300
+$Comp
+L Jumper:SolderJumper_2_Open JP1
+U 1 1 5CBAC11B
+P 4400 3850
+F 0 "JP1" H 4525 3900 50  0000 C CNN
+F 1 "Mode" H 4250 3900 50  0000 C CNN
+F 2 "" H 4400 3850 50  0001 C CNN
+F 3 "~" H 4400 3850 50  0001 C CNN
+	1    4400 3850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Aukey-Fuel-Gauge-rescue:GND #PWR06
+U 1 1 5CBAC3AA
+P 4175 3975
+F 0 "#PWR06" H 4175 3725 50  0001 C CNN
+F 1 "GND" H 4175 3825 50  0000 C CNN
+F 2 "" H 4175 3975 50  0000 C CNN
+F 3 "" H 4175 3975 50  0000 C CNN
+	1    4175 3975
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4250 3850 4175 3850
+Wire Wire Line
+	4175 3850 4175 3975
 $EndSCHEMATC

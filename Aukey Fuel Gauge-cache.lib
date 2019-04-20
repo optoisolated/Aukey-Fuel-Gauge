@@ -1,11 +1,11 @@
-EESchema-LIBRARY Version 2.3
+EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# +BATT
+# Aukey-Fuel-Gauge-rescue_+BATT
 #
-DEF +BATT #PWR 0 0 Y Y 1 F P
+DEF Aukey-Fuel-Gauge-rescue_+BATT #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "+BATT" 0 140 50 H V C CNN
+F1 "Aukey-Fuel-Gauge-rescue_+BATT" 0 140 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -16,11 +16,11 @@ X +BATT 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# CONN_01X02
+# Aukey-Fuel-Gauge-rescue_CONN_01X02
 #
-DEF CONN_01X02 P 0 40 Y N 1 F N
+DEF Aukey-Fuel-Gauge-rescue_CONN_01X02 P 0 40 Y N 1 F N
 F0 "P" 0 150 50 H V C CNN
-F1 "CONN_01X02" 100 0 50 V V C CNN
+F1 "Aukey-Fuel-Gauge-rescue_CONN_01X02" 100 0 50 V V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -38,11 +38,11 @@ X P2 2 -200 -50 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# C_Small
+# Aukey-Fuel-Gauge-rescue_C_Small
 #
-DEF C_Small C 0 10 N N 1 F N
+DEF Aukey-Fuel-Gauge-rescue_C_Small C 0 10 N N 1 F N
 F0 "C" 10 70 50 H V L CNN
-F1 "C_Small" 10 -80 50 H V L CNN
+F1 "Aukey-Fuel-Gauge-rescue_C_Small" 10 -80 50 H V L CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -60,11 +60,11 @@ X ~ 2 0 -100 80 U 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# GND
+# Aukey-Fuel-Gauge-rescue_GND
 #
-DEF GND #PWR 0 0 Y Y 1 F P
+DEF Aukey-Fuel-Gauge-rescue_GND #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "GND" 0 -150 50 H V C CNN
+F1 "Aukey-Fuel-Gauge-rescue_GND" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -73,26 +73,17 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# LM3914
+# Aukey-Fuel-Gauge-rescue_LM3914
 #
-DEF LM3914 U 0 40 Y Y 1 F N
+DEF Aukey-Fuel-Gauge-rescue_LM3914 U 0 40 Y Y 1 F N
 F0 "U" 250 -750 60 H V C CNN
-F1 "LM3914" 100 600 60 H V C CNN
+F1 "Aukey-Fuel-Gauge-rescue_LM3914" 100 600 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
 S -250 550 300 -700 0 1 0 N
 X LED1 1 500 500 200 L 50 50 1 1 O
-X V- 2 -450 400 200 R 50 50 1 1 w
-X V+ 3 -450 500 200 R 50 50 1 1 W
-X Div(LE) 4 -450 250 200 R 50 50 1 1 B
-X SigIn 5 -450 -50 200 R 50 50 1 1 I
-X DIV(HE) 6 -450 150 200 R 50 50 1 1 I
-X N/C 7 -50 -900 200 U 50 50 1 1 N
-X RefOut 8 -450 -250 200 R 50 50 1 1 w
-X N/C 9 100 -900 200 U 50 50 1 1 N
 X REFADJ 10 -450 -150 200 R 50 50 1 1 I
-X LED2 20 500 400 200 L 50 50 1 1 O
 X Mode 11 -450 -400 200 R 50 50 1 1 I
 X LED10 12 500 -400 200 L 50 50 1 1 O
 X LED9 13 500 -300 200 L 50 50 1 1 O
@@ -102,14 +93,23 @@ X LED6 16 500 0 200 L 50 50 1 1 O
 X LED5 17 500 100 200 L 50 50 1 1 O
 X LED4 18 500 200 200 L 50 50 1 1 O
 X LED3 19 500 300 200 L 50 50 1 1 O
+X V- 2 -450 400 200 R 50 50 1 1 w
+X LED2 20 500 400 200 L 50 50 1 1 O
+X V+ 3 -450 500 200 R 50 50 1 1 W
+X Div(LE) 4 -450 250 200 R 50 50 1 1 B
+X SigIn 5 -450 -50 200 R 50 50 1 1 I
+X DIV(HE) 6 -450 150 200 R 50 50 1 1 I
+X N/C 7 -50 -900 200 U 50 50 1 1 N
+X RefOut 8 -450 -250 200 R 50 50 1 1 w
+X N/C 9 100 -900 200 U 50 50 1 1 N
 ENDDRAW
 ENDDEF
 #
-# Led_Small
+# Aukey-Fuel-Gauge-rescue_Led_Small
 #
-DEF Led_Small D 0 10 N N 1 F N
+DEF Aukey-Fuel-Gauge-rescue_Led_Small D 0 10 N N 1 F N
 F0 "D" -50 125 50 H V L CNN
-F1 "Led_Small" -175 -100 50 H V L CNN
+F1 "Aukey-Fuel-Gauge-rescue_Led_Small" -175 -100 50 H V L CNN
 F2 "" 0 0 50 V V C CNN
 F3 "" 0 0 50 V V C CNN
 $FPLIST
@@ -126,11 +126,11 @@ X A 2 100 0 70 L 40 40 1 1 P
 ENDDRAW
 ENDDEF
 #
-# R
+# Aukey-Fuel-Gauge-rescue_R
 #
-DEF R R 0 0 N Y 1 F N
+DEF Aukey-Fuel-Gauge-rescue_R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "R" 0 0 50 V V C CNN
+F1 "Aukey-Fuel-Gauge-rescue_R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V V C CNN
 F3 "" 0 0 50 H V C CNN
 $FPLIST
@@ -144,11 +144,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# SW_PUSH
+# Aukey-Fuel-Gauge-rescue_SW_PUSH
 #
-DEF SW_PUSH SW 0 40 N N 1 F N
+DEF Aukey-Fuel-Gauge-rescue_SW_PUSH SW 0 40 N N 1 F N
 F0 "SW" 150 110 50 H V C CNN
-F1 "SW_PUSH" 0 -80 50 H V C CNN
+F1 "Aukey-Fuel-Gauge-rescue_SW_PUSH" 0 -80 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -156,6 +156,28 @@ S -170 50 170 60 0 1 0 N
 P 4 0 1 0 -40 60 -30 90 30 90 40 60 N
 X 1 1 -300 0 200 R 50 50 0 1 P I
 X 2 2 300 0 200 L 50 50 0 1 P I
+ENDDRAW
+ENDDEF
+#
+# Jumper_SolderJumper_2_Open
+#
+DEF Jumper_SolderJumper_2_Open JP 0 0 Y N 1 F N
+F0 "JP" 0 80 50 H V C CNN
+F1 "Jumper_SolderJumper_2_Open" 0 -100 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+$FPLIST
+ SolderJumper*Open*
+$ENDFPLIST
+DRAW
+A -10 0 40 901 -901 0 1 0 N -10 40 -10 -40
+A -10 0 40 901 -901 0 1 0 F -10 40 -10 -40
+A 10 0 40 -899 899 0 1 0 N 10 -40 10 40
+A 10 0 40 -899 899 0 1 0 F 10 -40 10 40
+P 2 0 1 0 -10 40 -10 -40 N
+P 2 0 1 0 10 40 10 -40 N
+X A 1 -150 0 100 R 50 50 1 1 P
+X B 2 150 0 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #

@@ -1,4 +1,4 @@
-(kicad_pcb (version 20171130) (host pcbnew "(5.0.0)")
+(kicad_pcb (version 20171130) (host pcbnew "(5.0.2)-1")
 
   (general
     (thickness 1.6)
@@ -58,6 +58,7 @@
     (pad_size 1.524 1.524)
     (pad_drill 0.762)
     (pad_to_mask_clearance 0.2)
+    (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
@@ -955,7 +956,7 @@
   (gr_line (start 130.6 101.7) (end 130.6 103.5) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 131.4 100.9) (end 130.6 101.7) (angle 90) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 161.2 101.5) (end 160.6 100.9) (angle 90) (layer Edge.Cuts) (width 0.15))
-  (gr_text "Aukey Battery\nFuel Gauge v1.1\n2017 MATDAR" (at 131.5 102.4) (layer B.SilkS)
+  (gr_text "Aukey Battery\nFuel Gauge v1.1\n2017 Optoisolated" (at 131.5 102.4) (layer B.SilkS)
     (effects (font (size 0.4 0.4) (thickness 0.1)) (justify right mirror))
   )
 
